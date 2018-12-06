@@ -1,5 +1,8 @@
 {
   "name": "NetflixHBM",
-  "integrations": {},
-  "type": "ionic-angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "b28ef47a"
 }

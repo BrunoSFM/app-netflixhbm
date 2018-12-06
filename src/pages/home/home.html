@@ -1,14 +1,429 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<div class="m_area nano">
+   <div id="loading">
+        
+    </div>
+    <div class="menu" id="menu">
+      <!-- REMOVER -->
+    </div>
+    <div class="app m nano-content" id="app">
+        <div class="swipe-area" data-for="menu"></div>
+        <div class="fw-msg small bg-red" id="connection-status">Sem ligação à Internet!</div>
+        <div class="header">
+            <div class="me-b" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+            <div class="name-b">([userdata.name])
+                <span class="username">Grupo 20</span>
+            </div>
+            <div class="section-menu">
+                <div class="g home-g" id="go-home"><i class="fas fa-home"></i></div>
+                <div class="g accounts-g" id="open-accounts"><i class="fas fa-clipboard-list"></i></div>
+                <div class="g chat-g" id="open-chat"><div class="unread-msgs">27</div><i class="fas fa-inbox"></i></div>
+            </div>
+        </div>
+        <!--<div class="_mp" style="width: 100%; height: 100%;">
+            <div id="map" style="width: 100%; height: 100%;"></div>
+            <script>
+              var map;
+              function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 41.1806745, lng: -8.6289581},
+                  zoom: 14
+                });
+              }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATJJqgUifMd0EER9KIOIHP7hwGtowIsok&callback=initMap"
+            async defer></script>
+        </div>-->
+        <script>
+        function doRefresh(event) {
+            
+        }
+        </script>
+        <ion-content overflow-scroll="true" class="_ct">
+            <ion-refresher (ionRefresh)="doRefresh($event)">
+                <ion-refresher-content
+                  pullingIcon="arrow-dropdown"
+                  pullingText="Desliza para atualizar!"
+                  refreshingSpinner="circles"
+                  refreshingText="A carregar os dados...">
+                </ion-refresher-content>
+                <ion-refresher-content></ion-refresher-content>
+            </ion-refresher>
+            <article class="p" data-pid="1" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> fez um pedido de conta.</h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <!--<div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-2.fna.fbcdn.net/vp/a137fd2781853ec2a1b3f218e77a66d5/5B39EAD2/t51.2885-15/s640x640/sh0.08/e35/28156129_1087472364725875_1350600943523069952_n.jpg">
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>-->
+                <footer>
+                    <div class="_pact">
+                        <div class="_act _as" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="2" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-2.fna.fbcdn.net/vp/a137fd2781853ec2a1b3f218e77a66d5/5B39EAD2/t51.2885-15/s640x640/sh0.08/e35/28156129_1087472364725875_1350600943523069952_n.jpg" class="testElem test"></ion-img>
+                        <script>
+                        setInterval(function() {
+                            if($('.testElem').hasClass("test")) {
+                                $('.testElem').removeClass("test");
+                            } else {
+                                $('.testElem').addClass("test")
+                            }
+                        }, 2000);
+                        </script>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act _as" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="3" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/7e3b4e382044fbe611f5ab35a5bb18e1/5CABC935/t51.2885-15/e35/p1080x1080/44698464_334159874030951_6721510240736840296_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act _as" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/a1d15ce33c50fbc8484ace99ca5e20c1/5CA98B17/t51.2885-15/e35/p1080x1080/46339124_327416067842372_1626567519440663692_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/7c57d4d60f06fb0ea4a828d31b94b194/5C8CF969/t51.2885-15/e35/43691823_559076844540176_6093926987666155413_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/66bd87fa23c6a1d030a093d2aea0db79/5C9F442E/t51.2885-15/sh0.08/e35/s750x750/44768024_259409074753325_5100325146943836464_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/e73fe7a1efd49a0e0be8f0040597c645/5C92A2B6/t51.2885-15/e35/44803517_2226020770743398_8374024182001775929_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/9565eeee8593ae792b005357550c10eb/5CB1BC3F/t51.2885-15/e35/44843564_1936373006443883_8454281215388730204_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/1ca5dd114593da251a56458f27af1f28/5CA7038C/t51.2885-15/sh0.08/e35/s750x750/44927649_158355015130543_4976724080616346289_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/e91e2a0deaf3f1257b8060026dc1ec11/5C8EC96C/t51.2885-15/sh0.08/e35/p750x750/45301313_121199062221434_5787755674096820078_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/4a630d92865e2dc02ba53d8138981e28/5C9B245E/t51.2885-15/e35/45708788_1984979528250924_5461556532621193812_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/7b4214e41f6e63143ce3fbeba1eead75/5CA70172/t51.2885-15/e35/46551290_311248996144772_7124212170606984719_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
+            <div class="_sp h20"></div>
+            <article class="p" data-pid="4" data-actopen="false">
+                <header>
+                    <div class="_pc">
+                        <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
+                    </div>
+                    <div class="_pi">
+                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <div class="t">Hoje às 14:23</div>
+                    </div>
+                </header>
+                <div class="_c">
+                    <div class="_i _cov">
+                        <ion-img src="https://instagram.fopo2-1.fna.fbcdn.net/vp/81f72a848c3a9542970887b0b9f85926/5CA3C209/t51.2885-15/e35/45268373_1113769102114270_7390775146308404657_n.jpg"></ion-img>
+                    </div>
+                    <div class="_ov">
+                        <div class="_po" data-action="like" data-hl="false"><i class="_n far fa-thumbs-up"></i><i class="_b fas fa-thumbs-up"></i></div>
+                        <div class="_po" data-action="share"><i class="_n far fa-share-square"></i><i class="_b fas fa-share-square"></i></div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="_pact">
+                        <div class="_act" data-action="like"><i class="_n far fa-heart"></i><i class="_b fas fa-heart"></i></div>
+                        <div class="_act" data-action="comments"><i class="_n far fa-comments"></i></div>
+                        <div class="_act" data-action="share"><i class="_n fas fa-share-square"></i></div>
+                    </div>
+                </footer>
+            </article>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+            <div class="_sp h40"></div>
+        </ion-content>
+        <div class="notifications-b rep" id="swipe-notifications"></div><div class="notifications-b icon new" id="toggle-notifications" data-open="false"><i class="fas fa-bell"></i></div>
+        <div id="central-menu-toggle"></div>
+    </div>
+</div>
