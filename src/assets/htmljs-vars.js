@@ -15,8 +15,8 @@ $(document).ready(function() {
     setTimeout(function() {
         HtmlJsVars_SetVar("testing.var","This is a test var...");
         HtmlJsVars_SetVar("userdata.name","Bruno Miguel");
-        HtmlJsVars_SetVar("userdata.group","Grupo 100",2000);
-    }, 5000);
+        HtmlJsVars_SetVar("userdata.group","Grupo 100");
+    }, 3000);
 });
 
 function HtmlJsVars_SetVar(varName, varValue, setDelay=0) {
