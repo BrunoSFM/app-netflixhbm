@@ -1,0 +1,9 @@
+/* HTMLJS VARS - DEVELOPED BY BRUNO MIGUEL */
+
+var[active] {
+    display: flex;
+    margin: 2px 0;
+    background-color: transparent;
+    background-image: url('../assets/imgs/var-init-bg.gif');
+    background-size: cover;
+}

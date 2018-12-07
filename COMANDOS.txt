@@ -1,0 +1,13 @@
+# INICIAR SERVIDOR DE DESENVOLVIMENTO LOCAL
+$ ionic serve
+
+# EFETUAR BUILD DO APP
+$ ionic build
+
+# EFETUAR BUILD E CRIAÇÃO DO APP (.APK) PARA ANDROID
+$ ionic cordova build android
+
+# ATUALIZAR REPOSITORIO REMOTO COM MODIFICAÇÕES LOCAIS
+$ git add .
+$ git commit -m "Nome das Alterações..."
+$ git push origin master

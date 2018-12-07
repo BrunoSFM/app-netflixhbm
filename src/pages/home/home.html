@@ -9,8 +9,8 @@
         <div class="fw-msg small bg-red" id="connection-status">Sem ligação à Internet!</div>
         <div class="header">
             <div class="me-b" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
-            <div class="name-b">([userdata.name])
-                <span class="username">Grupo 17</span>
+            <div class="name-b"><var active data-var="userdata.name" data-init-width="100%" data-init-height="20px"></var>
+                <span class="username"><var active data-var="userdata.group" data-init-width="100px" data-init-height="17px"></var></span>
             </div>
             <div class="section-menu">
                 <div class="g home-g" id="go-home"><i class="fas fa-home"></i></div>
@@ -41,9 +41,7 @@
             <ion-refresher (ionRefresh)="doRefresh($event)">
                 <ion-refresher-content
                   pullingIcon="arrow-dropdown"
-                  pullingText="Desliza para atualizar!"
-                  refreshingSpinner="circles"
-                  refreshingText="A carregar os dados...">
+                  refreshingSpinner="circles">
                 </ion-refresher-content>
                 <ion-refresher-content></ion-refresher-content>
             </ion-refresher>
@@ -81,7 +79,7 @@
                         <div class="photo" style="background-image: url('assets/imgs/netflix-ico.png');"></div>
                     </div>
                     <div class="_pi">
-                        <h3><strong>([userdata.name])</strong> esteve com <strong>...</strong></h3>
+                        <h3><var active data-var="postdata.title" data-init-width="150px" data-init-height="17px"></var></h3>
                         <div class="t">Hoje às 14:23</div>
                     </div>
                 </header>
