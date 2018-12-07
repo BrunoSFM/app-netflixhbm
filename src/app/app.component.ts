@@ -16,8 +16,7 @@ export class MyApp {
   rootPage:any = HomePage;
 
   constructor(platform: Platform, cache: CacheService, statusBar: StatusBar, splashScreen: SplashScreen, modalCtrl: ModalController, backgroundMode: BackgroundMode) {
-    backgroundMode.enable();
-    backgroundMode.overrideBackButton();
+    
     let splash = modalCtrl.create(Splash);
     splash.present();
     splashScreen.hide();
@@ -26,6 +25,8 @@ export class MyApp {
     
     platform.ready().then(() => {
         //statusBar.styleDefault();
+        backgroundMode.enable();
+        backgroundMode.overrideBackButton();
     });
   }
 }

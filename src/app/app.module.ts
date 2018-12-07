@@ -10,6 +10,7 @@ import { Splash } from '../pages/splash/splash';
 
 import { CacheModule } from 'ionic-cache';
 import { HttpModule } from '@angular/http';
+import { BackgroundMode } from '@ionic-native/background-mode';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpModule } from '@angular/http';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    BackgroundMode
   ]
 })
 export class AppModule {}
