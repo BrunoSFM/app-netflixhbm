@@ -6,8 +6,14 @@ $ ionic build
 
 # EFETUAR BUILD E CRIAÇÃO DO APP (.APK) PARA ANDROID
 $ ionic cordova build android
+$ ionic cordova build --release android --prod
 
 # ATUALIZAR REPOSITORIO REMOTO COM MODIFICAÇÕES LOCAIS
 $ git add .
 $ git commit -m "Nome das Alterações..."
 $ git push origin master
+
+# GERAR RESOURCES IMAGES
+- Adicionar "/resources/icon.png" (1024x1024)
+- Adicionar "/resources/splash.png" (2732x2732)
+$ ionic cordova resources -i (only for icon)

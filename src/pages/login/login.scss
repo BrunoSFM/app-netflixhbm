@@ -1,0 +1,35 @@
+page-login {
+    .login-area { opacity: 0; }
+    .login-area.ready { opacity: 1; }
+    ion-content, ion-content * {
+        color: #ffffff;
+    }
+    .vertical-align-content > *
+    {
+         display: flex!important;
+         align-content: center!important;
+         align-items: center!important;
+    }
+    h1.title {
+        padding: 15px;
+    }
+    .auth-input {
+        width: 100%;
+        height: auto;
+        padding: 15px 50px;
+    }
+    .auth-input input {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: 0px solid;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        color: #484848;
+    }
+    .auth-input input[type="submit"] {
+        background-color: #32db64;
+        color: #ffffff !important;
+    }
+}

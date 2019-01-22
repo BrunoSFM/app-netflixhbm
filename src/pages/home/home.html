@@ -1,6 +1,6 @@
-<div class="m_area nano">
+<ion-content class="m_area nano">
     <div id="loading"></div>
-    <div class="app m nano-content" id="app">
+    <div class="app m nano-content">
         <div class="swipe-area" data-for="menu"></div>
         <div class="fw-msg small bg-red" id="connection-status">Sem ligação à Internet!</div>
         <div class="header">
@@ -28,11 +28,6 @@
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATJJqgUifMd0EER9KIOIHP7hwGtowIsok&callback=initMap"
             async defer></script>
         </div>-->
-        <script>
-        function doRefresh(event) {
-            
-        }
-        </script>
         <ion-content overflow-scroll="true" class="_ct">
             <ion-refresher (ionRefresh)="RefreshPosts($event)">
                 <ion-refresher-content
@@ -410,4 +405,4 @@
         <div class="notifications-b rep" id="swipe-notifications"></div><div class="notifications-b icon new" id="toggle-notifications" data-open="false"><i class="fas fa-bell"></i></div>
         <div id="central-menu-toggle"></div>
     </div>
-</div>
+</ion-content>

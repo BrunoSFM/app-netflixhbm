@@ -5,16 +5,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { Splash } from '../pages/splash/splash';
 
+import { IonicStorageModule } from '@ionic/storage';
 import { CacheModule } from 'ionic-cache';
 import { HttpModule } from '@angular/http';
 import { BackgroundMode } from '@ionic-native/background-mode';
+import { LocalNotifications } from '@ionic-native/local-notifications';
+import { Push, PushObject, PushOptions } from '@ionic-native/push';
 
 @NgModule({
   declarations: [
     MyApp,
+    LoginPage,
     HomePage,
     Splash
   ],
@@ -22,11 +27,13 @@ import { BackgroundMode } from '@ionic-native/background-mode';
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
     CacheModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LoginPage,
     HomePage,
     Splash
   ],
@@ -34,7 +41,9 @@ import { BackgroundMode } from '@ionic-native/background-mode';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BackgroundMode
+    BackgroundMode,
+    LocalNotifications,
+    Push
   ]
 })
 export class AppModule {}

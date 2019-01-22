@@ -541,7 +541,8 @@ ion-app.md {
 	color: #90949c;
 }
 ._ct article.p ._c {
-	padding: 0 10px;
+	/*padding: 0 10px;*/
+	padding: 0 0;
 	position: relative;
 }
 ._ct article.p ._c ._i {
@@ -560,8 +561,9 @@ ion-app.md {
 ._ct article.p._ao ._c ._i {
 	/*background-color: #000000;*/
 }
-._ct article.p ._c ._i img {
-	height: 100%;
+._ct article.p ._c ._i img,
+._ct article.p ._c ._i ion-img{
+	/*height: 100%;*/
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -578,7 +580,8 @@ ion-app.md {
 	transition: all 1s;
 	-webkit-transition: all 1s;
 }
-._ct article.p._ao ._c ._i._cov img {
+._ct article.p._ao ._c ._i._cov img,
+._ct article.p._ao ._c ._i._cov ion-img {
 	-webkit-filter: blur(1px);
 	filter: blur(1px);
 	/*opacity: 0.3;*/
